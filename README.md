@@ -2,6 +2,7 @@
 
 - https://disk.yandex.ru/d/0SD1xQPlXkggYg
 - https://blog.algomaster.io/
+- https://ru.algorithmica.org/
 
 # Паттерны
 
