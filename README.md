@@ -12,3 +12,7 @@
 
 # SEO
 - https://journal.topvisor.com/ru/academy/seo-start/
+
+# Безопасность
+- https://www.hackthebox.com/
+- https://portswigger.net/
