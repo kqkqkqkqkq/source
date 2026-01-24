@@ -3,7 +3,7 @@ site_name: Source
 site_description: Материалы для изучения программирования, подготовки к собеседованиям
 site_author: K
 site_url: https://kqkqkqkqkq.github.io/source
-docs_dir: docs
+# docs_dir: docs
 site_dir: docs
 
 # Repository
