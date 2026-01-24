@@ -3,8 +3,8 @@ site_name: Source
 site_description: Материалы для изучения программирования, подготовки к собеседованиям
 site_author: K
 site_url: https://kqkqkqkqkq.github.io/source
-# docs_dir: docs
-site_dir: docs
+docs_dir: docs
+site_dir: site
 
 # Repository
 repo_name: kqkqkqkqkq/source
@@ -73,8 +73,6 @@ markdown_extensions:
 #   - '🔒 Продвинутый уровень': advanced-teaser.md
 # #  - 'Дополнительное чтение':
 #    - 'Тест': extra/test.md
-
-nav_name: "Оглавление"
 
 nav:
   - Home: index.md
