@@ -1,0 +1,88 @@
+site_name: Source
+
+site_description: Материалы для изучения программирования, подготовки к собеседованиям
+site_author: K
+site_url: https://kqkqkqkqkq.github.io/source
+docs_dir: docs
+site_dir: docs
+
+# Repository
+repo_name: kqkqkqkqkq/source
+repo_url: https://github.com/kqkqkqkqkq/source
+edit_uri: ""
+
+copyright: Copyright &copy; 2025-2026 K
+
+theme:
+  name: material
+  custom_dir: custom
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/robot
+  features:
+   - navigation.expand
+
+# Extras
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kqkqkqkqkq/source
+      name: GitHub
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - meta
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  # - pymdownx.emoji:
+      # emoji_index: !!python/name:material.extensions.emoji.twemoji
+      # emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# nav:
+#   - 'Введение': index.md
+#   - 'Знакомство с aiogram': quickstart.md
+#   - 'Работа с сообщениями': messages.md
+#   - 'Кнопки': buttons.md
+#   - 'Роутеры. Структура': routers.md
+#   - 'Фильтры и мидлвари': filters-and-middlewares.md
+#   - 'Особые апдейты': special-updates.md
+#   - 'Конечные автоматы': fsm.md
+#   - 'Инлайн-режим': inline-mode.md
+#   - 'Платежи': payments.md
+#   - '🔒 Продвинутый уровень': advanced-teaser.md
+# #  - 'Дополнительное чтение':
+#    - 'Тест': extra/test.md
+
+nav_name: "Оглавление"
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
