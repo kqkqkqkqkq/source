@@ -54,6 +54,7 @@ markdown_extensions:
 
 nav:
   - Главная: index.md
+  - Введение: intro.md
   - Алгоритмы: algorithms.md
   - Паттерны: architecture.md
   - Курсы: courses.md
