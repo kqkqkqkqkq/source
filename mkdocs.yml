@@ -33,7 +33,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    logo: material/robot
+    logo: material/code
   features:
    - navigation.expand
 
