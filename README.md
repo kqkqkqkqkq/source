@@ -1,8 +1,10 @@
+# Source
+
+В этом репозитории собраны все материалы для изучения алгоритмов и структур данных, подготовки к собеседованиям, 
+а также информация про стажировки в Т-Банк, Сбер, Яндекс, Озон и другие компании.
+
 # Алгоритмы
 
-- https://disk.yandex.ru/d/0SD1xQPlXkggYg
-- https://blog.algomaster.io/
-- https://ru.algorithmica.org/
 
 # Паттерны
 
@@ -17,3 +19,8 @@
 - https://www.hackthebox.com/
 - https://portswigger.net/
 
+# Собеседования
+
+https://easyoffer.ru/android-developer/questions
+
+# Курсы

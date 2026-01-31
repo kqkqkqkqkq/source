@@ -13,7 +13,7 @@ copyright: Copyright &copy; 2025-2026 K
 
 theme:
   name: material
-  custom_dir: custom
+  # custom_dir: custom
   language: ru
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -53,9 +53,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  # - pymdownx.emoji:
-      # emoji_index: !!python/name:material.extensions.emoji.twemoji
-      # emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # nav:
 #   - 'Введение': index.md
@@ -73,8 +70,8 @@ markdown_extensions:
 #    - 'Тест': extra/test.md
 
 nav:
-  - Home: index.md
-  - About: about.md
+  - Главная: index.md
+  - Алгоритмы: algorithms.md
 
 
 plugins:
