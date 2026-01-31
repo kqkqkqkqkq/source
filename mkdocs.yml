@@ -63,8 +63,9 @@ nav:
   - UI/UX Дизайн: design.md
   - SEO: seo.md
   - Технологии: technologies.md
-  - Безопасность: security.md
+  - Безопасность: safety.md
   - Полезные нейросети: ai.md
+  - Полезные книги: books.md
 
 
 plugins:
