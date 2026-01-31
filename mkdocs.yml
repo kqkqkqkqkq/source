@@ -4,7 +4,6 @@ site_description: Материалы для изучения программи�
 site_author: K
 site_url: https://kqkqkqkqkq.github.io/source
 
-# Repository
 repo_name: kqkqkqkqkq/source
 repo_url: https://github.com/kqkqkqkqkq/source
 edit_uri: ""
@@ -37,14 +36,12 @@ theme:
   features:
    - navigation.expand
 
-# Extras
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/kqkqkqkqkq/source
       name: GitHub
 
-# Extensions
 markdown_extensions:
   - admonition
   - pymdownx.highlight
@@ -55,24 +52,18 @@ markdown_extensions:
   - toc:
       permalink: true
 
-# nav:
-#   - 'Введение': index.md
-#   - 'Знакомство с aiogram': quickstart.md
-#   - 'Работа с сообщениями': messages.md
-#   - 'Кнопки': buttons.md
-#   - 'Роутеры. Структура': routers.md
-#   - 'Фильтры и мидлвари': filters-and-middlewares.md
-#   - 'Особые апдейты': special-updates.md
-#   - 'Конечные автоматы': fsm.md
-#   - 'Инлайн-режим': inline-mode.md
-#   - 'Платежи': payments.md
-#   - '🔒 Продвинутый уровень': advanced-teaser.md
-# #  - 'Дополнительное чтение':
-#    - 'Тест': extra/test.md
-
 nav:
   - Главная: index.md
   - Алгоритмы: algorithms.md
+  - Паттерны: architecture.md
+  - Курсы: courses.md
+  - Подготовка к собеседованиям: interviews.md
+  - Стажировки: internship.md
+  - UI/UX Дизайн: design.md
+  - SEO: seo.md
+  - Технологии: technologies.md
+  - Безопасность: security.md
+  - Полезные нейросети: ai.md
 
 
 plugins:
