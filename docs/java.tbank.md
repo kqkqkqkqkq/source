@@ -9,40 +9,15 @@ description: Подготовка к собеседованию в Т-Банк A
 
 - [ ] invalidate()
 - [ ] onMeasure()
-- [X] requestLayout()
+- [ ] requestLayout()
 - [ ] onLayout()
-
-<details>
-<summary>Объяснение</summary>
-* invalidate() - используется, когда нужно только перерисовать ваш элемент (текст, цвет и т.д.)
-* onMeasure() - определяет размер и расположение вашего View на экране
-* requestLayout() - используется, когда нужно изменить размеры вашего View
-* onLayout() - вызывается при каждом изменении размера и позиции View, в том числе при его создании и перерисовке
-
-[Источник](https://habr.com/ru/articles/727744/){:target="_blank" rel="noopener"}
-</details>
 
 ## 2. Можно ли записывать данные в переменную, помеченную модификатором out?
 
 - [ ] Да
-- [X] Нет
+- [ ] Нет
 - [ ] Да, если переменная не используется для чтения
 - [ ] Да, если подтип является базовым
-
-<details>
-<summary>Объяснение</summary>
-
-```kotlin
-interface FileReader<out T> {
-    fun read(): T
-    fun write(data: T) // Ошибка
-}
-```
-!!! warning "Компилятор выкинет ошибку"
-    Type parameter 'T' is declared as 'out' but occurs in 'in' position in type 'T (of interface FileReader<out T>)'
-
-[Источник](https://kotlinlang.org/docs/generics.html#declaration-site-variance){:target="_blank" rel="noopener"}
-</details>
 
 ## 3. Что работает быстрее Serializable или Parcelable?
 
