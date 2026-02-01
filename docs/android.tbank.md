@@ -21,6 +21,7 @@ description: Подготовка к собеседованию в Т-Банк A
 * onLayout() - вызывается при каждом изменении размера и позиции View, в том числе при его создании и перерисовке
 
 [Источник](https://habr.com/ru/articles/727744/){:target="_blank" rel="noopener"}
+
 </details>
 
 ## 2. Можно ли записывать данные в переменную, помеченную модификатором out?
@@ -43,6 +44,7 @@ interface FileReader<out T> {
     Type parameter 'T' is declared as 'out' but occurs in 'in' position in type 'T (of interface FileReader<out T>)'
 
 [Источник](https://kotlinlang.org/docs/generics.html#declaration-site-variance){:target="_blank" rel="noopener"}
+
 </details>
 
 ## 3. Что работает быстрее Serializable или Parcelable?
