@@ -69,8 +69,12 @@ nav:
   - Безопасность: safety.md
   - Полезные нейросети: ai.md
   - Полезные книги: books.md
-  - Android. T-Bank: android.tbank.md
-  - Java. T-Bank: java.tbank.md
+  - Вопросы собеседований:
+    - Android: android.interview.md 
+  - T-Bank:
+    - Android: android.tbank.md
+    - Java: java.tbank.md
+    - Frontend: frontend.tbank.md
 
 
 plugins:
