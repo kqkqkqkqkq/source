@@ -75,6 +75,10 @@ nav:
     - Android: android.tbank.md
     - Java: java.tbank.md
     - Frontend: frontend.tbank.md
+  - Yandex: 
+    - Android: android.yandex.md
+    - Backend: backend.yandex.md
+    - Frontend: frontend.yandex.md
 
 
 plugins:
