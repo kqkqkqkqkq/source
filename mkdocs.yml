@@ -79,6 +79,8 @@ nav:
     - Android: android.yandex.md
     - Backend: backend.yandex.md
     - Frontend: frontend.yandex.md
+  - Avito:
+    - Android: android.avito.md
 
 
 plugins:
