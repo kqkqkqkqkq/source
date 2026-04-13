@@ -7,12 +7,7 @@ description: Android разработка. Собеседование android р
 
 ## Сайты с теорией
 
-* https://bimlibik.github.io
-* https://nurlandroid.com
-
-## 1. Какой принцип SOLID говорит о том, что класс должен иметь одну причину для изменения?
-- [X] Single Responsibility
-- [ ] Open/Closed
-- [ ] Liskov Substitution
-- [ ] Interface Segregation
-- [ ] Dependency Inversion
+* [Блог от bimlibik](https://bimlibik.github.io)
+* [Блог от nurlandroid](https://nurlandroid.com)
+* [Примеры рекомпозиции в Jetpack Compose](https://ivk1800.github.io/recomposition-visualization/)
+* 
