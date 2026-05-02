@@ -1,0 +1,2343 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Подготовка к собеседованию в Авито Android разработчик. Тест по android Авито.">
+      
+      
+        <meta name="author" content="K">
+      
+      
+        <link rel="canonical" href="https://kqkqkqkqkq.github.io/source/android.avito/">
+      
+      
+        <link rel="prev" href="../frontend.yandex/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Авито. Android - Source</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Source" class="md-header__button md-logo" aria-label="Source" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Source
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Авито. Android
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="black"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="black"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kqkqkqkqkq/source" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kqkqkqkqkq/source
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Source" class="md-nav__button md-logo" aria-label="Source" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+
+    </a>
+    Source
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kqkqkqkqkq/source" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kqkqkqkqkq/source
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Введение
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Алгоритмы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Паттерны
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../courses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Курсы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interviews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Подготовка к собеседованиям
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../internship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Стажировки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI/UX Дизайн
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SEO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Технологии
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Безопасность
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Полезные нейросети
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Полезные книги
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Вопросы собеседований
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Вопросы собеседований
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../android.interview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T-Bank
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    T-Bank
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../android.tbank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java.tbank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontend.tbank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yandex
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Yandex
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../android.yandex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backend.yandex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontend.yandex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avito
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_17">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avito
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-gc-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Что может относится к gc roots?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Что может вызывать утечку памяти?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-systemgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Что будет, если разработчик вызовет метод System.gc() при закрытии приложения?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-softreference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Что-то про SoftReference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Что произойдет в результате выполнения этого кода?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.Изучите код и выберите верные утверждения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-lazy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. В каком моде по умолчанию работает lazy()
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-collect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Какой оператор нужно использовать, чтобы во время нового запроса предыдущий поиск гарантированно отменялся, а в collect попадали только актуальные результаты?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Какие утверждения являются верными
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-b-b-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Вы находитесь на активити A, есть кнопка перехода к активити B, после перехода на активити B нажимается системная кнопка Back, какие утверждения верны?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Выберите верные утверждения, если система убила процесс приложения и вы заходите в это приложение через недавно открытые?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-launchmodesingletask-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Что означает launchMode=singleTask у Activity. Выберите верные утверждения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-contentprovider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Когда инициализируется ContentProvider?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Выберите верное утверждение про Service
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Могут ли компоненты приложения работать в отдельном процессе
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-modifiersemantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Для чего нужен Modifier.semantics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-viewgroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Какой метод должен быть переопределен у наследника ViewGroup, чтобы расположить элементы на экране
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-ondraw-60-fps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. С какой переодичностью должен вызываться onDraw() на 60 fps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-provides-lazy-dagger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Выберите верные утверждения о Provides и Lazy в Dagger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-openclosed-solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Что является правильной реализацией open/closed принципа SOLID
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-hashmap-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Что будет, если в Hashmap положить элемент с ключом null?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Какие утверждения о структурах данных верные?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-e-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Какие утверждения верны для графа с E ребрами и V вершинами?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-hashcode-equals-hashmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Что произойдет, если hashcode вернет одинаковое значение для разных объектов, но equals для этих элементов разный при добавлении нового элемента в hashMap?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-capacity-hashmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Что такое capacity в HashMap?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Когда бинарный поиск по массиву эффективен?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-hashcode-equals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Какой контракт существует между hashCode и equals?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-recycler-view-3000-viewholder-list-200-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. У вас есть recycler view на 3000 элементов, в нем в каждом ViewHolder находится list, длинной в среднем 200 почему UI приложения может тормозить с учетом того, что все остальное работает оптимально?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Что выведет код?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30-jar-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Есть модуль, в котором хранится этот файл. Он компилируется в jar и подключается к другому модулю, где используется java. Выберите верные утверждения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        31. Что выведет данный код?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-lateinit-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        32. Как проверить инициализацию lateinit property?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-kotlin-jvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        33. Поддерживает ли Kotlin работу с примитивами JVM?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-inline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        34. Выберите верные утверждения о модификаторе inline?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        35. Что означает ключевое слово ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-gc-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Что может относится к gc roots?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Что может вызывать утечку памяти?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-systemgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Что будет, если разработчик вызовет метод System.gc() при закрытии приложения?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-softreference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Что-то про SoftReference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Что произойдет в результате выполнения этого кода?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.Изучите код и выберите верные утверждения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-lazy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. В каком моде по умолчанию работает lazy()
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-collect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Какой оператор нужно использовать, чтобы во время нового запроса предыдущий поиск гарантированно отменялся, а в collect попадали только актуальные результаты?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Какие утверждения являются верными
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-b-b-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Вы находитесь на активити A, есть кнопка перехода к активити B, после перехода на активити B нажимается системная кнопка Back, какие утверждения верны?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Выберите верные утверждения, если система убила процесс приложения и вы заходите в это приложение через недавно открытые?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-launchmodesingletask-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Что означает launchMode=singleTask у Activity. Выберите верные утверждения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-contentprovider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Когда инициализируется ContentProvider?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Выберите верное утверждение про Service
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Могут ли компоненты приложения работать в отдельном процессе
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-modifiersemantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Для чего нужен Modifier.semantics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-viewgroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Какой метод должен быть переопределен у наследника ViewGroup, чтобы расположить элементы на экране
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-ondraw-60-fps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. С какой переодичностью должен вызываться onDraw() на 60 fps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-provides-lazy-dagger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Выберите верные утверждения о Provides и Lazy в Dagger
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-openclosed-solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Что является правильной реализацией open/closed принципа SOLID
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-hashmap-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Что будет, если в Hashmap положить элемент с ключом null?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Какие утверждения о структурах данных верные?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-e-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Какие утверждения верны для графа с E ребрами и V вершинами?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-hashcode-equals-hashmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Что произойдет, если hashcode вернет одинаковое значение для разных объектов, но equals для этих элементов разный при добавлении нового элемента в hashMap?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-capacity-hashmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Что такое capacity в HashMap?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Когда бинарный поиск по массиву эффективен?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-hashcode-equals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Какой контракт существует между hashCode и equals?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-recycler-view-3000-viewholder-list-200-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. У вас есть recycler view на 3000 элементов, в нем в каждом ViewHolder находится list, длинной в среднем 200 почему UI приложения может тормозить с учетом того, что все остальное работает оптимально?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        29. Что выведет код?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30-jar-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        30. Есть модуль, в котором хранится этот файл. Он компилируется в jar и подключается к другому модулю, где используется java. Выберите верные утверждения
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        31. Что выведет данный код?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-lateinit-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        32. Как проверить инициализацию lateinit property?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-kotlin-jvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        33. Поддерживает ли Kotlin работу с примитивами JVM?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-inline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        34. Выберите верные утверждения о модификаторе inline?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        35. Что означает ключевое слово ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">Вопросы и ответы<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1-gc-roots">1. Что может относится к gc roots?<a class="headerlink" href="#1-gc-roots" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Локальные переменные / ссылки в стеке активного потока</li>
+<li>Статические ссылки(поля) доступные из загруженных классов</li>
+<li>JNI ссылки, например GlobalRef</li>
+<li>Любая запись в HashMap</li>
+<li>Активные потоки Thread в приложении</li>
+<li>Объекты, на которые ссылаются из нативного когда через JNI WeakGlobalRef</li>
+<li>Объекты на которые ссылаются из WeakReference</li>
+<li>Любой объекты, находящийся в поколении Old Gen</li>
+<li>Аргументы метода main</li>
+<li>Любой объект, созданный через new, пока не вызван GC</li>
+</ol>
+<h2 id="2">2. Что может вызывать утечку памяти?<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Объявленный inner class с захватом внешнего объекта</li>
+<li>Lambda, которая захыватывает this и сохраняется на уровне свойств класса</li>
+<li>Handler, которому назначили задачу с методом postDelayed()</li>
+<li>Ссылка на activity в Presenter-е, обернутая в WeakReference</li>
+</ol>
+<h2 id="3-systemgc">3. Что будет, если разработчик вызовет метод System.gc() при закрытии приложения?<a class="headerlink" href="#3-systemgc" title="Permanent link">&para;</a></h2>
+<ol>
+<li>GC выполнится немедленно и гарантированно</li>
+<li>JNI может проигнорировать, а частые вызовы могут ухудшить производительность</li>
+<li>System.gc чистит stack - это небезопасно</li>
+<li>System.gc удаляет все weak references моментально</li>
+</ol>
+<h2 id="4-softreference">4. Что-то про SoftReference<a class="headerlink" href="#4-softreference" title="Permanent link">&para;</a></h2>
+<ol>
+<li>SoftReference очищается при первой же сборке мусора</li>
+<li>Очистка SoftReference происходит, если в приложении закончилась память</li>
+<li>Поведение SoftReference зависит от политики сборщика мусора и деления памяти, поэтому кэш может очищаться непредсказуемо</li>
+<li>SoftReference никогда не очищается</li>
+<li>SoftReference запрещен в Android</li>
+<li>SoftReference делает кэш детерминированным: объект будет храниться, пок на него есть ссылка SoftReference</li>
+</ol>
+<h2 id="5">5. Что произойдет в результате выполнения этого кода?<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Object</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Object</span><span class="p">();</span>
+<span class="w">        </span><span class="n">object</span><span class="p">.</span><span class="na">notify</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ok&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>Ничего не выведет и зависнет</li>
+<li>Бросит IllegalMonitorStateException</li>
+<li>Бросит InterruptedException</li>
+<li>Выведет Ok</li>
+</ol>
+<h2 id="6">6.Изучите код и выберите верные утверждения<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kd">suspend</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">load</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">coroutineScope</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">loadA</span><span class="p">()</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">loadB</span><span class="p">()</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="n">a</span><span class="p">.</span><span class="na">await</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="na">await</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="kd">suspend</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">loadA</span><span class="p">():</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="m">500</span><span class="p">)</span>
+<span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">(</span><span class="s">&quot;Message&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">suspend</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">loadB</span><span class="p">():</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="m">100000000</span><span class="p">)</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="m">42</span>
+<span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>load вернет 42</li>
+<li>load() завершиться с исключением IllegalStateException из loadA()</li>
+<li>После исключения из loadA() корутина будет отменена </li>
+<li>loadB() гарантированно вычислится до конца потому что async независим</li>
+<li>Исключение из loadA() будет сгенерировано внутри Deffered и не повлияет на load()</li>
+</ol>
+<h2 id="7-lazy">7. В каком моде по умолчанию работает lazy()<a class="headerlink" href="#7-lazy" title="Permanent link">&para;</a></h2>
+<ol>
+<li>NONE</li>
+<li>PUBLICATION</li>
+<li>SYNCHRONIZED</li>
+<li>ATOMIC</li>
+<li>VOLATILE</li>
+</ol>
+<h2 id="8-collect">8. Какой оператор нужно использовать, чтобы во время нового запроса предыдущий поиск гарантированно отменялся, а в collect попадали только актуальные результаты?<a class="headerlink" href="#8-collect" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="n">query</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">):</span><span class="w"> </span><span class="n">Flow</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flow</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">emit</span><span class="p">(</span><span class="s">&quot;Start processing&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="m">100</span><span class="p">)</span>
+<span class="w">    </span><span class="n">emit</span><span class="p">(</span><span class="s">&quot;Result : </span><span class="si">$</span><span class="n">query</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">val</span><span class="w"> </span><span class="nv">queries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flow</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">emit</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="m">50</span><span class="p">)</span>
+<span class="w">    </span><span class="n">emit</span><span class="p">(</span><span class="s">&quot;B&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// todo</span>
+<span class="w">    </span><span class="p">.</span><span class="na">collect</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">println</span><span class="p">(</span><span class="nb">it</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>Queries.map { search(it) }</li>
+<li>Queries.mapContract { search(it) }</li>
+<li>Queries.flatMapMerge { search(it) }</li>
+<li>Queries.flatMapLatest { search(it) }</li>
+</ol>
+<h2 id="9">9. Какие утверждения являются верными<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Deadlock возможен только при использовании (???), а не Mutex</li>
+<li>Race condition может возникнуть даже если программа не падает и иногда работает правильно</li>
+<li>Атомарность гарантирует отсутствие проблем видимости памяти</li>
+<li>Visibility problem возникает, когда изменение сделанные одним стеком не всегда видны другому</li>
+<li>Volatile гарантирует атомарность сложных операций, например, counter++</li>
+</ol>
+<h2 id="10-a-b-b-back">10. Вы находитесь на активити A, есть кнопка перехода к активити B, после перехода на активити B нажимается системная кнопка Back, какие утверждения верны?<a class="headerlink" href="#10-a-b-b-back" title="Permanent link">&para;</a></h2>
+<ol>
+<li>У А гарантированно вызовется onPause() -&gt; onStop() при открытии B</li>
+<li>У А всегда будет вызыван onDestroy() при открытии B</li>
+<li>B при старте проходит onCreate() -&gt; onStart() -&gt; onResume()</li>
+<li>B проходит onPause() -&gt; onStop() -&gt; onDestroy() при нажатии Back в B</li>
+<li>А проходит onRestart() -&gt; onStart() -&gt; onResume() при нажатии Back в B</li>
+<li>A может получить только onResume() без onStart() при нажатии Back в B, если A не была остановлена</li>
+<li>Если B прозрачная/диалоговая, то A при открытии B все равно будет остановлена onStop() обязателен</li>
+<li>В режиме multi-window/картинка в картинке A при открытии B может остаться в RESUMED и не получить onPause()</li>
+<li>Если B открыта с флагом FLAG_ACTIVITY_NO_HISTORY, то A всегда будет пересоздана(onCreate()) при Back из B</li>
+</ol>
+<h2 id="11">11. Выберите верные утверждения, если система убила процесс приложения и вы заходите в это приложение через недавно открытые?<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Будет вызван onRestart() перед onCreate()</li>
+<li>Activity будет создана заново через onCreate()</li>
+<li>Все поля activity будут восстановлены автоматически</li>
+<li>SavedInstanceState в onCreate() гарантированно будет не null</li>
+<li>Bundle из onSavedInstanceState() может быть передан в onCreate()</li>
+<li>Если onSavedInstanceState() не был вызван до убийства процесса, состояние не восстановится</li>
+</ol>
+<h2 id="12-launchmodesingletask-activity">12. Что означает launchMode=singleTask у Activity. Выберите верные утверждения<a class="headerlink" href="#12-launchmodesingletask-activity" title="Permanent link">&para;</a></h2>
+<ol>
+<li>В рамках одного процесса может существовать несколько экземпляров этой Activity</li>
+<li>Если экземпляр уже существует в task, то стек выше него будет очищен</li>
+<li>Будет вызыван onNewIntent() вместо создания нового экземпляра</li>
+<li>SingleTask эквивалентен SingleTop</li>
+<li>SingleTask всегда создает новую задачу (task)</li>
+</ol>
+<h2 id="13-contentprovider">13. Когда инициализируется ContentProvider?<a class="headerlink" href="#13-contentprovider" title="Permanent link">&para;</a></h2>
+<ol>
+<li>При первом обращении к нему</li>
+<li>При запуске первой Activity</li>
+<li>При старте приложения</li>
+<li>При установке приложения</li>
+</ol>
+<h2 id="14-service">14. Выберите верное утверждение про Service<a class="headerlink" href="#14-service" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Service всегда работает в отдельном потоке</li>
+<li>Service всегда работает в отдельном процессе</li>
+<li>Service по умолчанию работает в главном потоке приложения</li>
+<li>Service не может быть точкой входа в приложение </li>
+</ol>
+<h2 id="15">15. Могут ли компоненты приложения работать в отдельном процессе<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Нет, они запускаются только из одного процесса приложения</li>
+<li>Да, если указать android:process в манифесте</li>
+<li>Только Service</li>
+<li>Только ContentProvider</li>
+</ol>
+<h2 id="16-modifiersemantics">16. Для чего нужен Modifier.semantics<a class="headerlink" href="#16-modifiersemantics" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Для оптимизации рендера</li>
+<li>Для accessibility и тестирования</li>
+<li>Для расставления тэгов layout</li>
+<li>Для настройки анимаций и ресурсов</li>
+</ol>
+<h2 id="17-viewgroup">17. Какой метод должен быть переопределен у наследника ViewGroup, чтобы расположить элементы на экране<a class="headerlink" href="#17-viewgroup" title="Permanent link">&para;</a></h2>
+<ol>
+<li>onDraw()</li>
+<li>onMeasure()</li>
+<li>onLayout()</li>
+<li>onSizeChanged()</li>
+<li>invalidate()</li>
+<li>requestLayout()</li>
+<li>draw()</li>
+<li>onAttachToWindow()</li>
+<li>layout()</li>
+<li>dispatchDraw()</li>
+</ol>
+<h2 id="18-ondraw-60-fps">18. С какой переодичностью должен вызываться onDraw() на 60 fps<a class="headerlink" href="#18-ondraw-60-fps" title="Permanent link">&para;</a></h2>
+<ol>
+<li>~6 мс</li>
+<li>~16 мс</li>
+<li>~32 мс</li>
+<li>~60 мс</li>
+</ol>
+<h2 id="19-provides-lazy-dagger">19. Выберите верные утверждения о Provides и Lazy в Dagger<a class="headerlink" href="#19-provides-lazy-dagger" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Lazy всегда возвращает новый объект при вызове</li>
+<li>Lazy возвращает один и тот же закэшированный объект при каждом вызове get() - аналогично использованию аннтоации @SingleTon</li>
+<li>Provider создает объект один раз</li>
+<li>Provider всегда возвращает новый объект при вызове get()</li>
+</ol>
+<h2 id="20-openclosed-solid">20. Что является правильной реализацией open/closed принципа SOLID<a class="headerlink" href="#20-openclosed-solid" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Класс является закрытым для изменения, но его поведение можно расширять, подставляя разные реализации зависимостей через абстракции</li>
+<li>Он запрещает изменять любые поля и методы класса, делая его полностью immutable</li>
+<li>Класс получает свои зависимости как компонент, а не наследует функциональности</li>
+<li>DI автоматически создает и предоставляет все нужные зависимости, чтобы класс был освобожден от этой обязанности</li>
+</ol>
+<h2 id="21-hashmap-null">21. Что будет, если в Hashmap положить элемент с ключом null?<a class="headerlink" href="#21-hashmap-null" title="Permanent link">&para;</a></h2>
+<ol>
+<li>HashMap разрешит один ключ null, значение сохранится, повторная вставка с null перезапишет значение</li>
+<li>Будет NullPointerException</li>
+<li>Null-ключи запрещены, компилятор не даст скомпилировать код</li>
+<li>HashMap автоматически заменит null на пустую строку ""</li>
+<li>Можно добавить несколько null-ключей, они будут храниться в разных бакетах</li>
+<li>Null-ключ добавится, но get(null) всегда будет возвращать null</li>
+</ol>
+<h2 id="22">22. Какие утверждения о структурах данных верные?<a class="headerlink" href="#22" title="Permanent link">&para;</a></h2>
+<ol>
+<li>В динамическим массиве вставка в конце имеет амортизированную сложность O(1)</li>
+<li>В односвязном списке поиск элемента по значению имеет сложность O(1)</li>
+<li>В хэш-таблице средняя сложность поиска O(1), но в худшем случае может быть O(n)</li>
+<li>В сбалансированном бинарном дереве поиска гарантируется O(log n) для поиска, вставки и удаления</li>
+<li>Удаления первого элемента в динамическом массиве всегда O(1)</li>
+<li>В двусвязном спике удаление элемента по известному узлу может быть выполнена за O(1)</li>
+</ol>
+<h2 id="23-e-v">23. Какие утверждения верны для графа с E ребрами и V вершинами?<a class="headerlink" href="#23-e-v" title="Permanent link">&para;</a></h2>
+<ol>
+<li>При представлении графа в виде матрицы смежности проверка наличия ребра между двумя вершинами выполняется за O(1)</li>
+<li>При представлении графа в виде списка смежности проверка наличия конкретного ребра всегда выполняется за O(1)</li>
+<li>Обход графа в глубину имеет временную сложность O(V + E)</li>
+<li>Обход графа в ширину в худшем случае посещает каждую вершину и каждое ребро только один раз</li>
+<li>В любом ориентированном графе без циклов всегда существует единственный возможный топологический порядок</li>
+<li>Если граф представлен матрицей смежности, то по памяти он всегда эффективнее списка смежности</li>
+</ol>
+<h2 id="24-hashcode-equals-hashmap">24. Что произойдет, если hashcode вернет одинаковое значение для разных объектов, но equals для этих элементов разный при добавлении нового элемента в hashMap?<a class="headerlink" href="#24-hashcode-equals-hashmap" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Один объект перезапишется другим</li>
+<li>HashMap сохранит оба объекта в одном bucket-e</li>
+<li>HashMap сохранит объекты в разных bucket-ах</li>
+<li>Нарушен контракт equals и hashcode - equals должен возвращать true, объект перезапишется другим</li>
+</ol>
+<h2 id="25-capacity-hashmap">25. Что такое capacity в HashMap?<a class="headerlink" href="#25-capacity-hashmap" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Количество элементов, которые уже добавлены</li>
+<li>Размер массива bucket'</li>
+<li>Максимальное количество ключей без коллизий</li>
+<li>Порог заполнения, при котором происходит перераспределение ключей в HashMap</li>
+</ol>
+<h2 id="26">26. Когда бинарный поиск по массиву эффективен?<a class="headerlink" href="#26" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Когда массив отсортирован и содержит четное количество элементов</li>
+<li>Когда поиск происходит по массиву, в котором все элементы отсортированы</li>
+<li>Когда массив частично отсортирован. Например, каждая половина отсортирована отдельно</li>
+<li>Когда массив отсортирован и содержит нечетное количество элементов</li>
+</ol>
+<h2 id="27-hashcode-equals">27. Какой контракт существует между hashCode и equals?<a class="headerlink" href="#27-hashcode-equals" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Если a.equals(b) == true, то a.hashCode() должен быть равен b.hashCode()</li>
+<li>Если a.hashCode() == b.hashCode(), то a.equals(b) должен быть true</li>
+<li>HashCode должен быть уникальным для каждого объекта</li>
+<li>Equals() должен сравнивать ссылки, а не поля</li>
+</ol>
+<h2 id="28-recycler-view-3000-viewholder-list-200-ui">28. У вас есть recycler view на 3000 элементов, в нем в каждом ViewHolder находится list, длинной в среднем 200 почему UI приложения может тормозить с учетом того, что все остальное работает оптимально?<a class="headerlink" href="#28-recycler-view-3000-viewholder-list-200-ui" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="na">id</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>Contains у List всегда O(1), но срабатывает GC</li>
+<li>Contains у List всегда O(log n), и при размере списка около 1000 элементов операция становится вычислительно затратной</li>
+<li>Contains у List может быть O(n), вызывается очень часто при биндинге/скролле</li>
+<li>RecyclerView кэширует биндинг, contains вызывается редко</li>
+</ol>
+<h2 id="29">29. Что выведет код?<a class="headerlink" href="#29" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span>
+<span class="p">(</span><span class="n">list</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">MutableList</span><span class="p">).</span><span class="na">add</span><span class="p">(</span><span class="m">4</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="na">size</span><span class="p">)</span>
+</code></pre></div>
+<ol>
+<li>3</li>
+<li>4</li>
+<li>ClassCastException</li>
+<li>UnsupportedOperationException</li>
+</ol>
+<h2 id="30-jar-java">30. Есть модуль, в котором хранится этот файл. Он компилируется в jar и подключается к другому модулю, где используется java. Выберите верные утверждения<a class="headerlink" href="#30-jar-java" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kd">internal</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">StarPlatinumRepository</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">internal</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onOraOra</span><span class="p">():</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;yare yare daze&quot;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>Класс UserRepository не будет доступен из другого модуля</li>
+<li>В скомпилируемом байт-коде internal превратится в public</li>
+<li>Доступ к UserRepository из Java другого модуля невозможен из-за модификатора доступа</li>
+<li>Kotlin компилятор обеспечивает ограничение internal только на уровне модулей во время компиляции</li>
+<li>Из Java можно получить доступ к UserRepository, если знать его полное имя</li>
+<li>Если использовать reflection из java, можно обойти ограничение internal</li>
+</ol>
+<h2 id="31">31. Что выведет данный код?<a class="headerlink" href="#31" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">A</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">list</span><span class="p">:</span><span class="w"> </span><span class="n">MutableList</span><span class="p">)</span>
+
+<span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="p">(</span><span class="s">&quot;John&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mutableListOf</span><span class="p">(</span><span class="s">&quot;Star Platinum&quot;</span><span class="p">))</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="na">copy</span><span class="p">()</span>
+
+<span class="w">    </span><span class="n">b</span><span class="p">.</span><span class="na">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Stone Free&quot;</span><span class="p">)</span>
+
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="na">list</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="na">list</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>[Stone Free] [Star Platinum]</li>
+<li>[Star Platinum] [Stone Free]</li>
+<li>[Star Platinum, Stone Free] [Star Platinum]</li>
+<li>[Star Platinum, Stone Free] [Star Platinum, Stone Free]</li>
+</ol>
+<h2 id="32-lateinit-property">32. Как проверить инициализацию lateinit property?<a class="headerlink" href="#32-lateinit-property" title="Permanent link">&para;</a></h2>
+<ol>
+<li>if(prop != null)</li>
+<li>::prop.isInitialized</li>
+<li>Prop.isInitialized()</li>
+<li>Никак, упадет UninitializedPropertyAccessException</li>
+</ol>
+<h2 id="33-kotlin-jvm">33. Поддерживает ли Kotlin работу с примитивами JVM?<a class="headerlink" href="#33-kotlin-jvm" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Да, Kotlin напрямую оперирует только примитивами JVM</li>
+<li>Нет, в Kotlin используются типы вроде int, которые могут компилироваться в примитивы JVM, но при nullable/дженериках боксируются</li>
+<li>Нет, Kotlin всегда боксирует числа</li>
+<li>Да, но только в value class</li>
+</ol>
+<h2 id="34-inline">34. Выберите верные утверждения о модификаторе inline?<a class="headerlink" href="#34-inline" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Тело inline функции и переданных лямбд может быть встроено в место вызова, уменьшая накладные расходы на лямбды</li>
+<li>Refied параметры возможны только у inline функций</li>
+<li>Inline всегда уменьшает размер байт-кода и ускоряет выполнение</li>
+<li>Crossinline запрещает нелокальные return из лямбды переданной в inline</li>
+<li>Inline функции нельзя использовать с generic параметрами</li>
+<li>Inline позволяет использовать non-local return из лямбды</li>
+<li>Если лямбда-параметр помечен как noinline, то он не будет встроен вместо вызова</li>
+<li>Ключевое слово crossinline запрещает non-local return из лямбды</li>
+</ol>
+<h2 id="35">35. Что означает ключевое слово <out T>?<a class="headerlink" href="#35" title="Permanent link">&para;</a></h2>
+<ol>
+<li>T можно использовать только как входной параметр (consumer only)</li>
+<li>T можно возвращать / производить (producer only) - это ковариантность</li>
+<li>T гарантирует потокобезопасность</li>
+<li>T отключает стирание типов на JVM</li>
+<li>T можно использовать и для входных и для выходных параметров без ограничений</li>
+<li>Out запрещает использовать T в параметрах функций внутри интерфейса</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025-2026 K
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/kqkqkqkqkq/source" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
